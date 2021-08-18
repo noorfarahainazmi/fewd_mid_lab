@@ -110,7 +110,7 @@ body {
   margin-top: 15%;
   color: #66727c;
 }
-.rover-hero-para-{
+.rover-hero-para{
   margin-left: 10%;
   word-spacing: 3px;
   font-size: larger;
@@ -125,7 +125,9 @@ body {
   display: inline-block;
   font-size: 16px;
   cursor: pointer;
-  margin: 40px 2px;
+  /* margin: 40px 2px; */
+  margin-left: 10%;
+  margin-top: 6%;
 }
 .rover-cta{
   
@@ -141,6 +143,7 @@ body {
   display: grid;
   justify-content: center; */
   text-align: center;
+  margin-top: 60%;
 
 }
 h2{
