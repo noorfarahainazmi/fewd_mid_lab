@@ -213,16 +213,50 @@ h2{
 
 }
 .rover-action-shot{
+  background-image: url(../img/lady-with-her-dogs.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  position: absolute;
 
 }
 .rover-action-quote-container{
+  border: 2px solid  #cfd7de;
+  /* margin: 40% ; */
+  margin-bottom:150px;
+  width: 30%;
+  height: 200px;
+  margin-left:70px;
+  position: absolute;
+  font-size: x-large;
+  padding-left: 30px;
+  /* padding-right: 70px;
+  padding-bottom:100px; */ */
+  /* margin:auto; */
+
 
 }
 .rover-action-dash{
 
+
+}
+.rover-quote::before{
+  content: open-quote;
+  
+}
+.rover-quote::after{
+  content: close-quote;
 }
 .rover-quote{
-
+  quotes: "“" "”" "‘" "’";
+}
+.light-gray{
+  color: #f4f5f6;
+}
+.rover-action-green{
+  text-decoration: none;
+  color: #06748a;
 }
 .rover-123-container{
 
