@@ -36,11 +36,6 @@ body {
   /* justify-content: space-between; */
   padding-top: 2em;
   padding-bottom: 2em;
-  
-  
-  
-  /* float: left; */
-
 }
 .rover-header-image{
   /* display: inside; */
@@ -49,17 +44,6 @@ body {
   margin-left: 5em;
   margin-top: 16px;
 }
-  @media screen and (max-width: 600px){
-    .rover-header-image{
-      width: 27%;
-      height: 23%;
-      margin-left: 1em;
-    }
-
-    
-  }
-
-
 .rover-header-link{
   /* display: flex;
   justify-item:inline-flex;
@@ -67,13 +51,6 @@ body {
   text-decoration: none;
   color: #1b1f23;
   padding: 2em;
-
-}
-
-@media screen and (max-width: 600px){
-  .rover-header-link{
-    display: none;
-  }
 }
 .rover-header-right{
   /* position: absolute; */
@@ -85,13 +62,6 @@ body {
   border: 2px solid #cfd7de;
   background-color: #f4f5f6;
 }
-/* @media screen and (max-width=){
-  .rover-header-right-mobile{
-    display: none;
-    position: absolute;
-    left: 0%;
-  }
-} */
 .rover-hero-container{
   background-image: url("../img/hero.jpg");
   background-size: 100%;
@@ -99,10 +69,6 @@ body {
   height: 100%;
   width: 100%;
   position: absolute;
-  @media (max-width=$desktop) and (min-width=$tablet) {
-    background: white;
-    
-  }
 }
 .rover-hero-title{
   position: relative;
@@ -115,7 +81,6 @@ body {
   word-spacing: 3px;
   font-size: larger;
   margin-top: 1%;
-
 }
 .rover-button{
   background-color: #14a96d;
@@ -129,12 +94,30 @@ body {
   margin-left: 10%;
   margin-top: 6%;
 }
-.rover-cta{
-  
+.rover-cta:hover{
+  background-color: #033641;
+  border: none;
+  color: #fff;
+  padding: 15px 32px;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  /* margin: 40px 2px; */
+  margin-left: 10%;
+  margin-top: 6%;
 
 }
-.rover.cta.mobile{
-
+.rover-cta-mobile:hover{
+  background-color: #033641;
+  border: none;
+  color: #fff;
+  padding: 15px 32px;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  /* margin: 40px 2px; */
+  margin-left: 10%;
+  margin-top: 6%;
 }
 .rover-middle-section{
   /* position: absolute; */
@@ -143,7 +126,7 @@ body {
   display: grid;
   justify-content: center; */
   text-align: center;
-  margin-top: 60%;
+  margin-top: 55%;
 
 }
 h2{
@@ -168,6 +151,7 @@ h2{
 .rover-two-boxes-container{
   display: grid;
   grid-template-columns: 50% 50%;
+  
 
 }
 .rover-facts-container{
@@ -224,19 +208,20 @@ h2{
 .rover-action-quote-container{
   border: 2px solid  #cfd7de;
   /* margin: 40% ; */
-  margin-bottom:150px;
+  margin-bottom: 150px;
   width: 30%;
-  height: 200px;
-  margin-left:70px;
+  height: 300px;
+  margin-left: 10%;
   position: absolute;
   font-size: x-large;
   padding-left: 30px;
+  padding-top: 4%;
+  background-color: #f4f5f6;
+  word-spacing: 4px;
+}
   /* padding-right: 70px;
   padding-bottom:100px; */ */
   /* margin:auto; */
-
-
-}
 .rover-action-dash{
 
 
@@ -252,7 +237,7 @@ h2{
   quotes: "“" "”" "‘" "’";
 }
 .light-gray{
-  color: #f4f5f6;
+  color: gray;
 }
 .rover-action-green{
   text-decoration: none;
@@ -272,3 +257,35 @@ h2{
 }
 
 
+/* rover mobile view (max-width 600px) */
+@media screen and (max-width: 600px) {
+  .rover-header-link{
+    display: none;
+  }
+  .rover-header-image{
+    display: none;
+
+  }
+  .rover-hero-title{
+    display: none;
+  }
+  .rover-button .rover-cta{
+    display: none;
+  }
+  /* .rover-cta{
+    display: none;
+  } */
+}
+  
+/* rover web view (min-width: 680px) */
+@media screen and (min-width:680px) {
+  .rover-header-right-mobile{
+    display: none;
+  }
+  .rover-button .rover-cta-mobile{
+    display: none;
+  }
+  .rover-mobile-hero{
+    display: none;
+  }
+}
